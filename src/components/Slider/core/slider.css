@@ -1,0 +1,29 @@
+.slider {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: normal;
+  overflow-x: auto;
+  padding-inline: 0;
+  scroll-behavior: smooth;
+  scroll-snap-stop: always;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: none;
+  overscroll-behavior-y: auto;
+}
+
+.slider:not(.-show-scroll-bar) {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.slider:not(.-show-scroll-bar)::-webkit-scrollbar {
+  display: none;
+}
+
+.slide {
+  flex: 0 0 100%;
+  max-width: none;
+  list-style-type: none;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
